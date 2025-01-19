@@ -5,7 +5,7 @@ const Footer = () => {
       <footer className="bg-white py-8 border-t border-b  ">
         <div className="p-10 ml-10 grid grid-cols-2 gap-8 md:grid-cols-6">
           <div>
-            <h4 className="font-bold text-gray-800">Product</h4>
+            <h4 className="font-bold text-gray-500">Product</h4>
             <ul>
               {[
                 "Overview",
@@ -14,18 +14,18 @@ const Footer = () => {
                 "Pricing",
                 "Releases",
               ].map((item, index) => (
-                <li key={index} className="text-gray-600 mt-2">
+                <li key={index} className="text-black mt-2">
                   {item}
                 </li>
               ))}
             </ul>
           </div>
           <div >
-            <h4 className="font-bold text-gray-800">Company</h4>
+            <h4 className="font-bold text-gray-500">Company</h4>
             <ul>
               {["About us", "Careers", "Press", "News", "Contact"].map(
                 (item, index) => (
-                  <li key={index} className="text-gray-600 mt-2">
+                  <li key={index} className="text-black mt-2">
                     {item}
                   </li>
                 )
@@ -33,11 +33,11 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-gray-800">Resources</h4>
+            <h4 className="font-bold text-gray-500">Resources</h4>
             <ul>
               {["Blog", "Newsletter", "Events", "Help centre"].map(
                 (item, index) => (
-                  <li key={index} className="text-gray-600 mt-2">
+                  <li key={index} className="text-black mt-2">
                     {item}
                   </li>
                 )
@@ -45,11 +45,11 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-gray-800">Use cases</h4>
+            <h4 className="font-bold text-gray-500">Use cases</h4>
             <ul>
               {["Blog", "Newsletter", "Events", "Help centre"].map(
                 (item, index) => (
-                  <li key={index} className="text-gray-600 mt-2">
+                  <li key={index} className="text-black mt-2">
                     {item}
                   </li>
                 )
@@ -57,11 +57,11 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-gray-800">Socials</h4>
+            <h4 className="font-bold text-gray-500">Socials</h4>
             <ul>
               {["Blog", "Newsletter", "Events", "Help centre"].map(
                 (item, index) => (
-                  <li key={index} className="text-gray-600 mt-2">
+                  <li key={index} className="text-black mt-2">
                     {item}
                   </li>
                 )
@@ -69,11 +69,11 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-gray-800">Legal</h4>
+            <h4 className="font-bold text-gray-500">Legal</h4>
             <ul>
               {["Terms", "Privacy", "Cookies", "Licenses"].map(
                 (item, index) => (
-                  <li key={index} className="text-gray-600 mt-2">
+                  <li key={index} className="text-black mt-2">
                     {item}
                   </li>
                 )
