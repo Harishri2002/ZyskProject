@@ -9,6 +9,8 @@ import Features from './components/Features'
 import FAQ from './components/FAQ'
 import Testimonial from './components/Testimonial'
 import Blog from './components/Blog'
+import Trial from './components/Trial'
+import Footer from './components/Footer'
 function App() {
   return (
     <div className='bg-white'>
@@ -19,6 +21,8 @@ function App() {
     <Testimonial /> 
     <FAQ/>
     <Blog />
+    <Trial />
+    <Footer />
     </div>
   )
 }
