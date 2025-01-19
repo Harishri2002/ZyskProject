@@ -2,8 +2,8 @@ import React from 'react';
 import zyskLogo from "../assets/Zysk.png";
 const Footer = () => {
     return (
-      <footer className="bg-white py-8 border-t ">
-        <div className="border p-10 grid grid-cols-2 gap-8 md:grid-cols-6">
+      <footer className="bg-white py-8 border-t border-b  ">
+        <div className="p-10 ml-10 grid grid-cols-2 gap-8 md:grid-cols-6">
           <div>
             <h4 className="font-bold text-gray-800">Product</h4>
             <ul>

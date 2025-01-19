@@ -29,7 +29,7 @@ const Blog = () => {
               desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
               author: "Olivia Rhye",
               date: "20 Jan 2024",
-              img: {image1}, // Replace with actual image
+              img: image1, // Replace with actual image
             },
             {
               title: "Migrating to Linear 101",
@@ -37,7 +37,7 @@ const Blog = () => {
               desc: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.",
               author: "Phoenix Baker",
               date: "19 Jan 2024",
-              img: {image2}, // Replace with actual image
+              img: image2, // Replace with actual image
             },
             {
               title: "Building your API stack",
@@ -45,7 +45,7 @@ const Blog = () => {
               desc: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
               author: "Lana Steiner",
               date: "18 Jan 2024",
-              img:{image3}, // Replace with actual image
+              img:image3, // Replace with actual image
             },
           ].map((post, index) => (
             <div key={index} className="border rounded-lg overflow-hidden shadow-lg">

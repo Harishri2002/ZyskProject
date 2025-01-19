@@ -32,7 +32,7 @@ const faqData = [
 
   return (
     <div className="max-w-4xl mx-auto bg-white">
-      <h2 className="text-2xl font-semibold mb-8 text-gray-800 text-center">Frequently asked questions</h2>
+      <h2 className="text-3xl font-bold mb-8 text-gray-800 text-center">Frequently asked questions</h2>
       <p className="text-center text-gray-600 mb-8">
         Everything you need to know about the product and billing.
       </p>
