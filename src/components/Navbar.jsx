@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import zyskLogo from "../assets/Zysk.png"; // Update with actual image path
+import zyskLogo from "../assets/zysk.png"; // Update with actual image path
 import profilePic from "../assets/profile.png"; // Update with actual profile image path
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

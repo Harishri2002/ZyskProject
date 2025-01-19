@@ -3,6 +3,7 @@ import "tailwindcss/tailwind.css"
 import image1 from '../assets/image1.png'
 import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
+import profilePic from '../assets/profile.png'
 // Blog Component
 const Blog = () => {
   return (
@@ -17,9 +18,11 @@ const Blog = () => {
         </p>
         </div>
         
-        <button className=" bg-red-500 h-10 w-29 px-3 text-white rounded-lg font-medium hover:bg-red-600">
-          View all posts
-        </button>
+         {/* On larger screens, keep the button aligned right, but on mobile, it'll be at the bottom */}
+         <button className="bg-red-500 h-10 w-29 px-3 text-white rounded-lg font-medium hover:bg-red-600 hidden sm:block md:ml-auto">
+  View all posts
+</button>
+
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
@@ -29,7 +32,7 @@ const Blog = () => {
               desc: "How do you create compelling presentations that wow your colleagues and impress your managers?",
               author: "Olivia Rhye",
               date: "20 Jan 2024",
-              img: image1, // Replace with actual image
+              img: image1, 
             },
             {
               title: "Migrating to Linear 101",
@@ -37,7 +40,7 @@ const Blog = () => {
               desc: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.",
               author: "Phoenix Baker",
               date: "19 Jan 2024",
-              img: image2, // Replace with actual image
+              img: image2, 
             },
             {
               title: "Building your API stack",
@@ -45,7 +48,7 @@ const Blog = () => {
               desc: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
               author: "Lana Steiner",
               date: "18 Jan 2024",
-              img:image3, // Replace with actual image
+              img:image3,
             },
           ].map((post, index) => (
             <div key={index} className="border rounded-lg overflow-hidden shadow-lg">
@@ -55,22 +58,35 @@ const Blog = () => {
                 className="w-full h-48 object-cover"
               />
               <div className="p-4">
-                <span className="text-sm text-blue-600 font-medium">
-                  {post.category}
-                </span>
-                <h4 className="text-lg font-semibold text-gray-900 mt-2">
-                  {post.title}
-                </h4>
-                <p className="text-sm text-gray-600 mt-2">{post.desc}</p>
-                <div className="flex items-center mt-4">
-                  <p className="text-sm text-gray-500">
-                    {post.author} - {post.date}
-                  </p>
-                </div>
-              </div>
+  <span className="text-sm text-blue-600 font-medium">
+    {post.category}
+  </span>
+  <h4 className="text-lg font-semibold text-gray-900 mt-2">
+    {post.title}
+  </h4>
+  <p className="text-sm text-gray-600 mt-2">{post.desc}</p>
+  <div className="flex items-center mt-4">
+    <img
+      src={profilePic}
+      alt="Profile"
+      className="h-8 w-8 rounded-full"
+    />
+    <p className="text-sm text-gray-500 flex flex-col ml-5">
+      <span>{post.author}</span>
+      <span>{post.date}</span>
+    </p>
+  </div>
+</div>
+
             </div>
           ))}
         </div>
+         {/* Button at the bottom on mobile */}
+    <div className="sm:hidden flex justify-center mt-8">
+      <button className="bg-red-500 h-10 w-full px-3 text-white rounded-lg font-medium hover:bg-red-600">
+        View all posts
+      </button>
+    </div>
       </div>
     </section>
   );

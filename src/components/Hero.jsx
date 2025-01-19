@@ -3,7 +3,11 @@ import image from "../assets/hero.png";
 const Hero = () => {
   return (
     <section className="text-center px-6 py-12 bg-white py-20">
-      <span className="text-red-500 font-semibold">New feature</span>
+      <span className="text-red-500 border-2 border-red-200 w-auto rounded-full px-2 p-1">
+      <span className="text-red-500 font-semibold border-2 border-red-200 rounded-full px-1">New feature</span>
+      &nbsp; Check out the team dashboard ➔
+      </span>
+     
       <h1 className="text-3xl md:text-5xl font-bold mt-2 text-black">
         Beautiful analytics to grow smarter
       </h1>
