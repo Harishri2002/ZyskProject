@@ -1,5 +1,5 @@
 import React from 'react';
-import zyskLogo from "../assets/Zysk.png";
+import zyskLogo from "../assets/zysk.png";
 const Footer = () => {
     return (
       <footer className="bg-white py-8 border-t border-b  ">
