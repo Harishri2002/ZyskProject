@@ -7,6 +7,8 @@ import Hero from './components/Hero'
 import Partners from './components/Partner'
 import Features from './components/Features'
 import FAQ from './components/FAQ'
+import Testimonial from './components/Testimonial'
+import Blog from './components/Blog'
 function App() {
   return (
     <div className='bg-white'>
@@ -14,7 +16,9 @@ function App() {
     <Hero />
     <Partners />
     <Features />
+    <Testimonial /> 
     <FAQ/>
+    <Blog />
     </div>
   )
 }

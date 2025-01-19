@@ -49,14 +49,17 @@ const faqData = [
           </details>
         ))}
       </div>
-      <div className="mt-16 text-center">
+      <div className="mt-16 text-center bg-slate-100 rounded-lg p-10">
       <img
           src={image} // Update this path to the actual help icon location
           alt="Help Icon"
           className="w-15 h-12 mx-auto mb-4"
         />
-        <p className="text-gray-700 mb-4">
-          Still have questions? Can’t find the answer you’re looking for? Please chat to our friendly team.
+         <p className="text-black text-2xl  mb-4">
+         Still have questions? 
+        </p>
+        <p className="text-700 text-gray-500 mb-4">
+         Can’t find the answer you’re looking for? Please chat to our friendly team.
         </p>
         <button
           className="px-6 py-3 bg-red-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-400">
