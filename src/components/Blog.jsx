@@ -4,7 +4,7 @@ import image1 from "../assets/Image1.png";
 import image2 from "../assets/Image2.png";
 import image3 from "../assets/Image3.png";
 import profilePic from "../assets/profile.png";
-// Blog Component
+// Blog Component update
 const Blog = () => {
   return (
     <section className=" p-20 border bg-white">
